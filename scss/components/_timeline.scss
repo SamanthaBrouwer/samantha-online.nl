@@ -159,7 +159,12 @@
     #{$self}__item {
       flex-direction: column;
       margin-bottom: 0;
-      padding-right: calc((100% / 12) * 1.44 + #{$spacer * 3});
+      padding-left: calc((100% / 12) * 1.44 + #{$spacer * 1.5});
+
+      @include media-breakpoint-up(sm) {
+        padding-left: 0;
+        padding-right: calc((100% / 12) * 1.44 + #{$spacer * 3});
+      }
     }
 
     #{$self}__icon {

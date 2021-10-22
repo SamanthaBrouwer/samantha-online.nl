@@ -1,5 +1,5 @@
 .block {
-  height: 100%;
+  height: calc(100% - #{$grid-gutter-width});
   margin-bottom: $grid-gutter-width;
   padding: $spacer * 1.5;
   text-align: center;

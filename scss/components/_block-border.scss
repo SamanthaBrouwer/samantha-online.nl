@@ -86,11 +86,8 @@
     }
 
     .section--contact & img {
-      margin-left: -$spacer * 3;
-      margin-top: -$spacer * 8;
-      
       @include media-breakpoint-up(md) {
-        margin-top: 0;
+        margin-left: -$spacer * 3;
       }
     }
   }

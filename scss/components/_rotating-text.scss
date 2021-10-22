@@ -1,11 +1,20 @@
 .rotating-text {
-  display: inline-flex;
-  height: $h1-font-size + $spacer;
-  margin: -$spacer * .5;
+  display: flex;
+  height: calc(2.425rem + 2.1vw); // H1 font-size on mobile
+  margin: 0 0 0 #{-$spacer * 1.25};
   overflow: hidden;
   padding: 0 0 0 $spacer * 1.25;
-  position: absolute;
+  // position: absolute;
   z-index: 10;
+  
+  @include media-breakpoint-up(sm) {
+    display: inline-flex;
+  }
+  
+  @include media-breakpoint-up(md) {
+    height: $h1-font-size + $spacer;
+    margin: -$spacer * .5;
+  }
   
   &__list {
     animation: rotate 15s infinite;
