@@ -110,14 +110,12 @@
     }
 
     #{$self}__image {
-      margin-top: -$spacer * 3;
       position: relative;
       text-align: right;
       z-index: 1;
       
       @include media-breakpoint-up(md) {
         margin-top: -$spacer * 4;
-        // width: calc(200% + #{$spacer * 4});
         text-align: left;
       }
     }
