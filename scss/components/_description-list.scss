@@ -1,0 +1,16 @@
+$dl-spacer: $spacer * 1.5;
+
+.description-list {
+  @include media-breakpoint-up(md) {
+    margin-bottom: -$dl-spacer;
+  }
+
+  &__term {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: $dl-spacer;
+  }
+}

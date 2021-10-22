@@ -1,0 +1,28 @@
+.block {
+  height: 100%;
+  margin-bottom: $grid-gutter-width;
+  padding: $spacer * 1.5;
+  text-align: center;
+
+  &--light {
+    background: $light;
+  }
+
+  &__icon {
+    font-size: $font-size-root * 3;
+    margin-bottom: $spacer;
+  }
+
+  &__title {
+    color: $primary;
+    font-family: $font-family-base;
+    font-weight: 600;
+    margin-bottom: $spacer;
+    text-transform: uppercase;
+    word-spacing: 100vw;
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+}

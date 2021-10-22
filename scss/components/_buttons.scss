@@ -1,0 +1,13 @@
+.btn {
+  text-transform: uppercase;
+
+  &-primary {
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+}

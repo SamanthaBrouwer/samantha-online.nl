@@ -1,0 +1,14 @@
+.projects {
+  &__row {
+    align-items: center;
+  }
+  
+  &__logo {
+    filter: grayscale(100%);
+    margin: $spacer;
+
+    @include media-breakpoint-up(md) {
+      margin: $spacer * 2;
+    }
+  }
+}

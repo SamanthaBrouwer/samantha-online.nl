@@ -1,0 +1,119 @@
+// Variables
+
+// Project colors
+$primary:             #cc577e;
+$primary-light:       #ede1e5;
+$light:               #f4eff1;
+$dark:                #333;
+$white:               #fff;
+
+// Project variables
+$logo-max-width:      150px;
+
+// Bootstrap variables overrides
+$body-color:                        $dark;
+$link-color:                        $primary;
+$link-decoration:                   none;
+$link-hover-decoration:             underline;
+
+$font-fallback:                     'Georgia', 'Times New Roman', system-ui, -apple-system, "Segoe UI", "Noto Sans", "Liberation Sans", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:            'Baskerville', #{$font-fallback};
+// $font-family-sans-serif:            'EB Garamond', #{$font-fallback};
+$font-size-root:                    1rem;
+$font-size-base:                    1.125rem;
+// $font-weight-base:                  300;
+
+$line-height-base:                  1.2;
+
+$h1-font-size:                      $font-size-root * 3;
+$h2-font-size:                      $font-size-root * 3;
+$h3-font-size:                      $font-size-root * 1.125;
+$h4-font-size:                      $font-size-root;
+
+$headings-font-family:              'Satisfy', #{$font-fallback};
+$headings-font-weight:              400;
+
+$spacer:                            $font-size-root;
+$border-radius:$body-color          0;
+
+$paragraph-margin-bottom:           $spacer * 1.5;
+
+// Font Awesome settings
+$fa-font-path:                      '../webfonts/fontawesome';
+
+// Navs
+// $nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                0.5rem;
+// $nav-link-font-size:                null !default;
+$nav-link-font-weight:              600;
+$nav-link-color:                    $body-color;
+$nav-link-hover-color:              $primary;
+// $nav-link-disabled-color:           $gray-600 !default;
+
+// Navbar settings
+// $navbar-padding-y:                  $spacer * .5;
+
+$navbar-nav-link-padding-x:         $spacer * 0.5;
+
+// $navbar-brand-font-size:            $font-size-lg;
+$navbar-brand-margin-end:           $spacer;
+
+// $navbar-toggler-padding-y:          .25rem;
+// $navbar-toggler-padding-x:          .75rem;
+// $navbar-toggler-font-size:          $font-size-lg;
+// $navbar-toggler-border-radius:      $btn-border-radius;
+$navbar-toggler-focus-width:        1px;
+// $navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+$navbar-light-color:                $body-color;
+$navbar-light-hover-color:          $primary;
+// $navbar-light-active-color:         rgba($black, .9);
+// $navbar-light-disabled-color:       rgba($black, .3);
+// $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+// $navbar-light-toggler-border-color: rgba($black, .1);
+
+// $navbar-light-brand-color:                $navbar-light-active-color;
+// $navbar-light-brand-hover-color:          $navbar-light-active-color;
+
+// Button settings
+// $input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         $spacer * 1.5;
+// $input-btn-font-family:       null !default;
+// $input-btn-font-size:         $font-size-base !default;
+// $input-btn-line-height:       $line-height-base !default;
+
+// $btn-padding-y:               $input-btn-padding-y !default;
+// $btn-padding-x:               $input-btn-padding-x !default;
+
+$btn-font-weight:             600;
+// $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+// $btn-focus-width:             $input-btn-focus-width !default;
+// $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+// $btn-disabled-opacity:        .65 !default;
+// $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+
+// Carousel
+$carousel-control-color:             $dark;
+$carousel-control-width:             $spacer * 4;
+$carousel-control-opacity:           1;
+$carousel-control-hover-opacity:     1;
+
+// Form
+$input-padding-y:                       $spacer * 0.5;
+$input-padding-x:                       $spacer * 0.5;
+// $input-line-height:                     $input-btn-line-height;
+
+$input-border-color:                    $primary-light;
+$input-border-width:                    2px;
+// $input-box-shadow:                      $box-shadow-inset;
+
+// $input-focus-bg:                        $input-bg;
+// $input-focus-border-color:              tint-color($component-active-bg, 50%);
+// $input-focus-color:                     $input-color;
+// $input-focus-width:                     $input-btn-focus-width;
+// $input-focus-box-shadow:                $input-btn-focus-box-shadow;
+
+// $input-placeholder-color:               $gray-600;
+// $input-plaintext-color:                 $body-color;
+
+// $input-height-border:                   $input-border-width * 2;

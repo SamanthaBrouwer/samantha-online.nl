@@ -1,0 +1,104 @@
+.block-border {
+  $self: &;
+
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+    
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &--left {
+    @include media-breakpoint-up(md) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__content {
+    background-color: $light;
+    padding: $spacer $spacer $spacer * 5;
+    position: relative;
+    
+    @include media-breakpoint-up(md) {
+      padding: $spacer * 3 $spacer * 6;
+      width: 80%;
+    }
+
+    &::after {
+      border: 4px solid $primary;
+      content: '';
+      height: calc(100% + #{$spacer * 4});
+      position: absolute;
+      right: -$spacer;
+      top: $spacer * 4;
+      width: 50%;
+      z-index: -1;
+      
+      @include media-breakpoint-up(md) {
+        height: calc(100% + #{$spacer * 8});
+        right: -22%;
+        top: -$spacer * 4;
+        width: 43%;  
+      }
+
+      #{$self}--left & {
+        left: -$spacer;
+        right: auto;
+        
+        @include media-breakpoint-up(md) {
+          left: -22%;
+        }
+      }
+    }
+
+    > * {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &__image {
+    text-align: right;
+    margin-right: $spacer;
+    margin-top: -$spacer * 6;
+    width: 100%;
+    z-index: 1;
+    
+    
+    @include media-breakpoint-up(md) {
+      margin-left: -20%;
+      margin-top: 0;
+      text-align: center;
+      width: 40%;
+    }
+
+    #{$self}--left & {
+      text-align: left;
+      margin-left: $spacer;
+
+      @include media-breakpoint-up(md) {
+        margin-left: auto;
+        margin-right: -20%;
+        text-align: center;
+      }
+    }
+
+    .section--contact & img {
+      margin-left: -$spacer * 3;
+      margin-top: -$spacer * 8;
+      
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__title {
+    color: $primary;
+    font-family: $font-family-base;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

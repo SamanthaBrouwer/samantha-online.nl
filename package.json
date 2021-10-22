@@ -1,0 +1,20 @@
+{
+  "name": "samantha-online.nl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --sourcemap=none --style=compressed --watch scss:dist/css"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "bootstrap": "^5.1.2"
+  }
+}

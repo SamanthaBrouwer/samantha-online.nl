@@ -1,0 +1,26 @@
+.skills {
+  &__title {
+    margin-bottom: $spacer * 0.5;
+    text-transform: uppercase;
+  }
+
+  &__bar {
+    background: $white;
+    border: 2px solid $primary-light;
+    height: $spacer * 1.25;
+    margin-bottom: $spacer * 1.5;
+    position: relative;
+    width: 100%;
+
+    &::after {
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: var(--skills-bar-width);
+      background: $primary;
+    }
+    
+  }
+}

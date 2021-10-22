@@ -1,0 +1,203 @@
+.timeline {
+  $self: &;
+
+  padding-left: 0;
+  padding-top: $spacer * 2;
+  position: relative;
+
+  &::after {
+    background: $primary-light;
+    bottom: 0;
+    content: '';
+    left: $spacer * 1.5;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    z-index: 0;
+
+    @include media-breakpoint-up(sm) {
+      left: calc(50% - 4px);
+    }
+  }
+
+  &__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__date {
+    background: $primary-light;
+    margin-bottom: $spacer;
+    margin-left: calc(20% + #{$spacer * 0.75});
+    margin-top: $spacer * 0.5;
+    padding: $spacer * 0.5 $spacer;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      border: $spacer * 0.75 solid transparent;
+      border-right-color: $primary-light;
+      content: '';
+      margin-top: -$spacer * 0.75;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      
+      @include media-breakpoint-up(sm) {
+        border-left-color: $primary-light;
+        border-right-color: transparent;
+        left: 100%;
+        right: auto;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0;
+      margin-right: calc((100% / 12) * 2);
+    
+      #{$self}__item:nth-child(even) & {
+        margin-left: calc((100% / 12) * 2);
+        margin-right: 0;
+
+        &::after {
+          border-left-color: transparent;
+          border-right-color: $primary-light;
+          left: auto;
+          right: 100%;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    background: $light;
+    border-radius: 50%;
+    display: flex;
+    font-size: $font-size-root * 2;
+    justify-content: center;
+    left: 0;
+    padding: $spacer * 0.5;
+    position: absolute;
+    top: 0;
+    width: $spacer * 3.5;
+    z-index: 1;
+    
+    @include media-breakpoint-up(sm) {
+      left: calc(50% - #{$spacer * 1.75});
+    }
+
+    &.fa-play {
+      color: $primary;
+
+      &::before {
+        margin-left: -$spacer * 0.25;
+      }
+    }
+  }
+
+  &__content {
+    align-self: flex-end;
+    width: 80%;
+
+    @include media-breakpoint-up(sm) {
+      align-self: revert;
+      width: calc((100% / 12) * 5);
+    }
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $primary;
+    display: block;
+    font-size: $font-size-root;
+  }
+
+  &__notification {
+    color: $secondary;
+    display: block;
+    font-size: $font-size-root * 0.825;
+    font-style: italic;
+  }
+
+  &__description {
+    margin-top: $spacer * 0.5;
+    font-size: $font-size-root;
+  }
+
+  // Timeline single
+  &--single {
+    margin-bottom: 0;
+    padding-top: 0;
+
+    &::after {
+      @include media-breakpoint-up(sm) {
+        left: auto;
+        right: calc((100% / 12) * 1.44);
+      }
+    }
+
+    #{$self}__item {
+      flex-direction: column;
+      margin-bottom: 0;
+      padding-right: calc((100% / 12) * 1.44 + #{$spacer * 3});
+    }
+
+    #{$self}__icon {
+      background: $white;
+      color: $primary;
+
+      @include media-breakpoint-up(sm) {
+        left: auto;
+        right: calc(((100% / 12) * 1.44) - #{$spacer * 1.5});
+      }
+    }
+
+    #{$self}__content {
+      width: 100%;
+    }
+
+    #{$self}__date {
+      background: transparent;
+      font-weight: bold;
+      margin: 0 !important;
+      padding: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    #{$self}__title {
+      color: $primary;
+    }
+
+    #{$self}__description {
+      margin-top: 0;
+      
+      #{$self}__item:last-child & {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+  

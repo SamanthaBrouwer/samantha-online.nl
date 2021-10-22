@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/baskerville/Baskerville-01.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../webfonts/baskerville/Baskerville-Italic-03.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../webfonts/baskerville/Baskerville-SemiBold-05.ttf') format('truetype');
+}
+
+@import 'fontawesome6/fontawesome';
+@import 'fontawesome6/brands';
+@import 'fontawesome6/light';

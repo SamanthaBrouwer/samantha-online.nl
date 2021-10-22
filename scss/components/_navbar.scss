@@ -1,0 +1,16 @@
+.navbar {
+  &-light {
+    background-color: $primary-light;
+  }
+
+  &-nav {
+    &--social {
+      flex-direction: row;
+    }
+
+    .nav-link {
+      padding-left: $spacer;
+      padding-right: $spacer;
+    }
+  }
+}

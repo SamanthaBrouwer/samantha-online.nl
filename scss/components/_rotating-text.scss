@@ -1,0 +1,47 @@
+.rotating-text {
+  display: inline-flex;
+  height: $h1-font-size + $spacer;
+  margin: -$spacer * .5;
+  overflow: hidden;
+  padding: 0 0 0 $spacer * 1.25;
+  position: absolute;
+  z-index: 10;
+  
+  &__list {
+    animation: rotate 15s infinite;
+    height: min-content;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+@keyframes rotate {
+  0%, 12.66%, 100% { 
+    transform: translate3d(0, 0, 0);
+  }
+
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}

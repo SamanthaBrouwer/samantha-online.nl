@@ -1,0 +1,13 @@
+form {
+  .row {
+    margin-bottom: $spacer;
+  }
+  
+  .col {
+    display: flex;
+  }
+
+  .btn[type="submit"] {
+    margin-left: auto;
+  }
+}

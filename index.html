@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="dist/css/style.css" rel="stylesheet">
+
+    <title>Samantha-online.nl</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img loading="lazy" src="dist/img/logo-samantha-online.nl.svg" alt="Samantha-online.nl" class="logo" width="150" height="59" />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse header__collapse" id="navbarCollapse">
+            <ul class="navbar-nav header__navbar">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">My skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-nav--social header__navbar">
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/samanthabrouwer90/" class="nav-link" target="_blank">
+                  <span class="sr-only">LinkedIn</span>
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/samanthabrouwer/" class="nav-link" target="_blank">
+                  <span class="sr-only">Instagram</span>
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/samanthabrouwer" class="nav-link" target="_blank">
+                  <span class="sr-only">Github</span>
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section section--primary-light section--hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="section__content">
+                <h1 class="section__title" data-background="Samantha-online.nl">
+                  I'm Samantha<br/>
+                  I'm a 
+                    <div class="rotating-text">
+                      <ul class="rotating-text__list">
+                        <li class="rotating-text__item">Creative Front-end Developer</li>
+                        <li class="rotating-text__item">Creative UX/UI Developer</li>
+                        <li class="rotating-text__item">Scrum Master</li>
+                        <li class="rotating-text__item">WordPress Theme Developer</li>
+                      </ul>
+                    </div>
+                </h1>
+                <p class="section__text section__text--large">
+                  Get to know me and my skills. Find out what I do that make me happy,
+                  what companies I worked for, how people feel about me and how to get 
+                  in touch.
+                </p>
+                <a href="#about-me" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <div class="col-5">
+              <picture class="section__image">
+                <source media="(max-width: 767px)" srcset="dist/img/samantha-header@0,5x.png" />
+                <source media="(min-width: 768px)" srcset="dist/img/samantha-header.png" />
+                <img loading="lazy" src="dist/img/samantha-header.png" alt="Samantha-online.nl" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--about" id="about-me">
+        <h2 class="section__title" data-background="About me">About me</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <div class="block-border block-border--left">
+                <div class="block-border__content">
+                  <dl class="description-list row">
+                    <div class="col-md">
+                      <dt class="description-list__term">Full name</dt>
+                      <dd class="description-list__description">Samantha Brouwer</dd>
+                      
+                      <dt class="description-list__term">Date of birth</dt>
+                      <dd class="description-list__description">3 February 1990</dd>
+                      
+                      <dt class="description-list__term">Location</dt>
+                      <dd class="description-list__description">Lisse, <br />The Netherlands</dd>
+                    </div>
+
+                    <div class="col-md">
+                      <dt class="description-list__term">Web</dt>
+                      <dd class="description-list__description">https://samantha-online.nl</dd>
+
+                      <dt class="description-list__term">Contact</dt>
+                      <dd class="description-list__description">
+                        Use my <a href="#contact">contact form</a> or 
+                        <a href="https://www.linkedin.com/in/samanthabrouwer90/" target="_blank">LinkedIn</a>
+                      </dd>
+
+                      <dt class="description-list__term">Hobbies</dt>
+                      <dd class="description-list__description">
+                        Winter sports, gymnastics, hiking, traveling, reading, cooking and making happy memories.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+                <picture class="block-border__image">
+                  <source media="(max-width: 767px)" srcset="dist/img/samantha-about-me@0,5x.png" />
+                  <source media="(min-width: 768px)" srcset="dist/img/samantha-about-me.png" />
+                  <img loading="lazy" src="dist/img/samantha-about-me.png" alt="Samantha - about me" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light section--skills" id="skills">
+        <h2 class="section__title" data-background="My skills">My skills</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <dl class="skills">
+                <dt class="skills__title">HTML</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 90%">
+                  <span class="sr-only">90%</span>
+                </dd>
+                
+                <dt class="skills__title">(S)CSS</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 90%">
+                  <span class="sr-only">90%</span>
+                </dd>
+
+                <dt class="skills__title">jQuery</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 50%">
+                  <span class="sr-only">50%</span>
+                </dd>
+                
+                <dt class="skills__title">Javascript</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 40%">
+                  <span class="sr-only">40%</span>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="col-md-4">
+              <dl class="skills">
+                <dt class="skills__title">Photoshop</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 80%">
+                  <span class="sr-only">80%</span>
+                </dd>
+
+                <dt class="skills__title">WordPress</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 80%">
+                  <span class="sr-only">80%</span>
+                </dd>
+                  
+                <dt class="skills__title">Scrum</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 70%">
+                  <span class="sr-only">70%</span>
+                </dd>
+                
+                <dt class="skills__title">SEO</dt>
+                <dd class="skills__bar" style="--skills-bar-width: 60%">
+                  <span class="sr-only">60%</span>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--services" id="services">
+        <h2 class="section__title" data-background="Services">Services</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <article class="block block--light">
+                <i class="block__icon fal fa-desktop-alt"></i>
+                <h3 class="block__title">Web Design</h3>
+                <p class="block__description">
+                  A new design for your website based on the latest design trends, with shapes and colors that will suit you and your company.
+                </p>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="block block--light">
+                <i class="block__icon fal fa-laptop-code"></i>
+                <h3 class="block__title">Web Development</h3>
+                <p class="block__description">
+                  Your new website coming to life online, with or without CMS. Pixel-perfect using modern techniques.
+                </p>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="block block--light">
+                <i class="block__icon fal fa-phone-laptop"></i>
+                <h3 class="block__title">Fully Responsive</h3>
+                <p class="block__description">
+                  A fully responsive website, tested thoroughly on every device. Not just random stacked blocks, but really thought through.
+                </p>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="block block--light">
+                <i class="block__icon fal fa-code"></i>
+                <h3 class="block__title">Clean Code</h3>
+                <p class="block__description">
+                  Easy to read, develop and maintain. Writing clean code is just as important as a good looking website in the browser.
+                </p>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="block block--light">
+                <i class="block__icon fal fa-users"></i>
+                <h3 class="block__title">Scrum Master</h3>
+                <p class="block__description">
+                  As Scrum Master I can help lift your team to a higher level of colloboration, commitment and successes.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--experience" id="experience">
+        <h2 class="section__title" data-background="Work experience">Work experience</h2>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12">
+              <ul class="timeline">
+                <li class="timeline__item">
+                  <div class="timeline__date">2020 - Today</div>
+                  <i class="timeline__icon fal fa-play"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Creative Front-end Developer / WordPress Theme Developer</h3>
+                    <span class="timeline__subtitle">Techkoningin.nl</span>
+                    <p class="timeline__description">
+                      As a Front-end Developer and WordPress Theme Developer at de Techkoningin I am responsible for
+                      developing pixel perfect and fully responsive websites for our customers. Using WordPress and 
+                      our own developed theme, we're giving our (mostly female) customers an easy tool to maintain 
+                      their own happy place online.
+                    </p>
+                  </div>
+                </li>
+    
+                <li class="timeline__item">
+                  <div class="timeline__date">2018 - 2019</div>
+                  <i class="timeline__icon fal fa-stop"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Creative Front-end Developer & Scrum Master</h3>
+                    <span class="timeline__subtitle">Lytho (formerly known as Sabern)</span>
+                    <p class="timeline__description">
+                      As a Creative Front-end Developer at Lytho it was my responsibility to implement the new design,
+                      look and feel of Lytho's own Brand Management Solution Software. I worked in a Scrum team with 
+                      technical front-end developers, back-end developers, a UX designer and a QA engineer, where I 
+                      was also the teams' Scrum Master.<br />
+                      Being the teams' Scrum Master, I facilitated our meetings, helped to remove impediments and 
+                      supported our Product Owner. 
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline__item">
+                  <div class="timeline__date">2016 - 2018</div>
+                  <i class="timeline__icon fal fa-stop"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Creative Front-end Developer & Scrum Master</h3>
+                    <span class="timeline__subtitle">DPG Media</span>
+                    <span class="timeline__notification">(On behalf of Developers.nl)</span>
+                    <p class="timeline__description">
+                      I was hired as an HTML/CSS focused Front-end Developer at first, to work at a new recruitment 
+                      program called Tweakers Elect. But during my time at DPG Media, I did so much more. I worked at 
+                      the new frontend of the recruiter part and onboarding flow of Nationale Vacaturebank, did a
+                      restyle of the Intermediair Salariskompas and worked on several email templates.<br />
+                      In October 2017 I was introduced as the new Scrum Master of our team. As coached for months by 
+                      our previous Scrum Master, I was now ready to take over the wheel, since he was leaving.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline__item">
+                  <div class="timeline__date">2016 - 2016</div>
+                  <i class="timeline__icon fal fa-stop"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Front-end Developer</h3>
+                    <span class="timeline__subtitle">Zorginstituut Nederland</span>
+                    <span class="timeline__notification">(On behalf of Developers.nl)</span>
+                    <p class="timeline__description">
+                      As Front-end Developer at Zorginstituut Nederland I mainly worked on further developments of 
+                      KiesBeter.nl, mainly focussing on the new healthcare institutions page. This page, built in 
+                      AngularJS, can be used to find healthcare providers, display quality data and compare these.<br />
+                      In addition to these developments, I also worked on futher developments on the Zorginstituut's
+                      intranet.<br />
+                      It was also a time for me to find out, sadly, that mainly working on AngularJS (or JavaScript 
+                      in general) is not my cup of tea.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline__item">
+                  <div class="timeline__date">2016 - 2018</div>
+                  <i class="timeline__icon fal fa-stop"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Front-end Developer</h3>
+                    <span class="timeline__subtitle">Developers.nl</span>
+                    <p class="timeline__description">
+                      Developers.nl seconded me to Zorginstituut Nederland and DPG Media. In between the projects I 
+                      made visuals for vacancies which were communicated via social media. 
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline__item">
+                  <div class="timeline__date">2013 - 2015</div>
+                  <i class="timeline__icon fal fa-stop"></i>
+                  <div class="timeline__content">
+                    <h3 class="timeline__title">Front-end Developer</h3>
+                    <span class="timeline__subtitle">Cartel Internet & Marketing</span>
+                    <p class="timeline__description">
+                      I started as a Junior Allround Developer, helping customers from within our support team developing 
+                      and maintaining their websites. After 4 months I transferred to our Projects team, where I worked 
+                      as a Front-end Developer on building new websites and in-house products.<br />
+                      In this time I also helped transitioning our team to work Agile using Scrum.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--education">
+        <h2 class="section__title" data-background="Education & certificates">Education & certificates</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <div class="block-border block-border--right">
+                <div class="block-border__content">
+                  <ul class="timeline timeline--single">
+                    <li class="timeline__item">
+                      <i class="timeline__icon fal fa-certificate"></i>
+                      <div class="timeline__content">
+                        <span class="timeline__date">2019</span>
+                        <h3 class="timeline__title">Fundamentals of Digital Marketing</h3>
+                        <p class="timeline__description">Google</p>
+                      </div>
+                    </li>
+
+                    <li class="timeline__item">
+                      <i class="timeline__icon fal fa-diploma"></i>
+                      <div class="timeline__content">
+                        <span class="timeline__date">2009 - 2013</span>
+                        <h3 class="timeline__title">Bachelor of ICT,<br />Communication &amp; Multimedia Design</h3>
+                        <p class="timeline__description">HAN University of Applied Sciences</p>
+                      </div>
+                    </li>
+
+                    <li class="timeline__item">
+                      <i class="timeline__icon fal fa-diploma"></i>
+                      <div class="timeline__content">
+                        <span class="timeline__date">2002 - 2007</span>
+                        <h3 class="timeline__title">Havo (Natuur & Techniek)</h3>
+                        <p class="timeline__description">Fioretticollege Lisse</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <picture class="block-border__image">
+                  <source media="(max-width: 767px)" srcset="dist/img/samantha-education@0,5x.png" />
+                  <source media="(min-width: 768px)" srcset="dist/img/samantha-education.png" />
+                  <img loading="lazy" src="dist/img/samantha-education.png" alt="Samantha - education" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light section--recommendations" id="recommendations">
+        <h2 class="section__title" data-background="Recommendations">Recommendations</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-6">
+              <div id="carouselRecommendations" class="recommendations carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="recommendations__item carousel-item active">
+                    <p class="recommendations__text">
+                      Nice colleague to work with. Friendly, passionate and quickly picks up new techniques. Extensive
+                      knowledge of the latest front-end techniques (Bootstrap, Less) and Scrum.
+                    </p>
+                    <p class="recommendations__author">
+                      Xander ten Boden
+                      <span class="recommendations__author-job">
+                        (Freelance Developer &amp; Co-Owner at K-Bit.dev)
+                      </span>
+                    </p>
+                  </div>
+                  <div class="recommendations__item carousel-item">
+                    <p class="recommendations__text">
+                      Samantha started her role at the Persgroep as a front end developer. But now that she's leaving us 
+                      it's hard to qualify her current role. She's still an excellent front-end developer for sure but she's 
+                      also the teams Scrum Master and responsible for tons of other things that keep the team running. I 
+                      think that it offers an excellent insight into Samantha as a team member. Not only does she do her 
+                      thing well, she's willing and able to adjust her role to the needs of the team to the benefit of all.
+                    </p>
+                    <p class="recommendations__author">
+                      Leon Krancher
+                      <span class="recommendations__author-job">
+                        (Scrum Master &amp; Agile Coach @ Mollie)
+                      </span>
+                    </p>
+                  </div>
+                  <div class="recommendations__item carousel-item">
+                    <p class="recommendations__text">
+                      Samantha is really a teamplayer. That's what we need in an agile environment. Always trying to help 
+                      others, without neglecting her own responsibilities. I've introduced her in the secrets of being a 
+                      scrum master and she succeeded well. Getting her focus and attention to our team while improving the 
+                      scrum process. <br />
+                      Apart from that a skilled Front-end developer with a lot of patience and care. Looking for a caring
+                      Front-Ender? Stop now and get in contact with Samantha.
+                    </p>
+                    <p class="recommendations__author">
+                      Guy Lagrand
+                      <span class="recommendations__author-job">
+                        (Freelance Agile Coach @ Scrumworks)
+                      </span>
+                    </p>  
+                  </div>
+                </div>
+                <button class="recommendations__control recommendations__control--prev carousel-control-prev" type="button" data-bs-target="#carouselRecommendations" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="recommendations__control recommendations__control--next carousel-control-next" type="button" data-bs-target="#carouselRecommendations" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section section--projects" id="projects">
+        <h2 class="section__title" data-background="I've worked projects for">I've worked projects for</h2>
+        <div class="container projects">
+          <div class="row projects__row">
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-vwpfs.svg" alt="Volkswagen Pon Financial Services" width="327" height="29" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-dpgmedia.svg" alt="DPG Media" width="132" height="69" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-lytho.png" alt="Lytho" width="120" height="67" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-tweakers.png" alt="Tweakers" width="260" height="70" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-renault.svg" alt="Renault" width="85" height="900" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-nvb.svg" alt="Nationale Vacaturebank" width="264" height="51" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-zinl.svg" alt="Zorginstituut Nederland" width="191" height="93" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-intermediair.png" alt="Intermediair" width="253" height="44" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-developers.svg" alt="Developers.nl" width="250" height="69" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-kbit.dev.svg" alt="K-Bit.dev" width="130" height="130" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-techkoningin.png" alt="De Techkoningin" width="247" height="88" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-fit.png" alt="Algemene Gymnastiekvereniging Fit Lisse" width="71" height="70" />
+            </div>
+            <div class="col-auto">
+              <img loading="lazy" class="projects__logo" src="dist/img/logo-tipsopreis.webp" alt="Tips Op Reis" width="158" height="95" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section section--contact" id="contact">
+        <h2 class="section__title" data-background="Contact">Contact</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="block-border block-border--left">
+                <div class="block-border__content">
+                  <h3 class="block-border__title">Want to get in touch?</h3>
+                  <p>
+                    Let's connect on <a href="https://www.linkedin.com/in/samanthabrouwer90/" target="_blank">
+                      LinkedIn</a> and send me a message there!
+                  </p>
+                  <p>
+                    <small>(A contact form will be ready soon.)</small>
+                  </p>
+                </div>
+                <picture class="block-border__image">
+                  <source media="(max-width: 767px)" srcset="dist/img/samantha-contact@0,5x.png" />
+                  <source media="(min-width: 768px)" srcset="dist/img/samantha-contact.png" />
+                  <img loading="lazy" src="dist/img/samantha-contact.png" alt="Samantha - contact" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="/">
+            <img loading="lazy" src="dist/img/logo-samantha-online.nl.svg" alt="Samantha-online.nl - Home" class="logo" width="150" height="59" />
+          </a>
+        </div>
+
+        <nav class="footer__nav nav">
+          <a href="privacy-policy.html" class="nav-link">Privacy policy</a>
+          <a href="https://tipsopreis.nl" class="nav-link" target="_blank">TipsOpReis.nl</a>
+        </nav>
+      
+        <nav class="footer__social nav">
+          <a href="https://www.linkedin.com/in/samanthabrouwer90/" class="nav-link" target="_blank">
+            <span class="sr-only">LinkedIn</span>
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/samanthabrouwer/" class="nav-link" target="_blank">
+            <span class="sr-only">Instagram</span>
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/samanthabrouwer" class="nav-link" target="_blank">
+            <span class="sr-only">Github</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  </body>
+</html>
